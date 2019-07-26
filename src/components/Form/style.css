@@ -1,0 +1,27 @@
+
+.search-test {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    margin-left: 100px;
+  
+  }
+  
+  .form-page{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form-input{
+    margin-bottom: 900px;
+  }
+
+  .vidsubmit{
+    font-size: 10;
+    color: black;
+    padding-right: 0px;
+
+  }

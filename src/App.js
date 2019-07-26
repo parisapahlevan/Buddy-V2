@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Link, Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
 import './App.css';
+import Home from './pages/home';
+import Dogs from './pages/dogs';
+import LogIn from "./pages/login"
+import Details from './pages/details';
+import Signup from "./pages/signup"
+import ShelterForm from "./components/Form"
+import API from './utils/API';
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    console.log(API)
+    return (
+      <div className="App">
+        <div className="App-intro">
+          <Switch>
+            <Route exact path="/"  component={Home} />
+            <Route path="/Dogs" component={Dogs} />   
+            <Route path="/details/:dogId" component={Details} />
+            <Route path="/Signin" component={LogIn} />
+            <Route path="/Signup" component={Signup} />
+            <Route path="/admin" component={ShelterForm} />
+          </Switch>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
