@@ -163,11 +163,7 @@ class SearchComponent extends React.Component {
   }
 
 }
-const inputGroupStyle = {
-  width: '200px',
-  margin: ' 0 auto',
-  float: 'none'
-}
+
 
 export default withRouter(SearchComponent);
 
