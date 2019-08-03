@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import './App.css';
 import Home from './pages/home';
 import Dogs from './pages/dogs';
-import LogIn from "./pages/login"
+import SignIn from "./pages/signin"
 import Details from './pages/details';
 import Signup from "./pages/signup"
 import ShelterForm from "./components/Form"
@@ -17,10 +17,10 @@ class App extends Component {
         <div className="App-intro">
           <Switch>
             <Route exact path="/"  component={Home} />
-            <Route path="/Dogs" component={Dogs} />   
+            <Route path="/dogs" component={Dogs} />   
             <Route path="/details/:dogId" component={Details} />
-            <Route path="/Signin" component={LogIn} />
-            <Route path="/Signup" component={Signup} />
+            <Route path="/signin" component={SignIn} />
+            <Route path="/signup" component={Signup} />
             <Route path="/admin" component={ShelterForm} />
           </Switch>
         </div>
