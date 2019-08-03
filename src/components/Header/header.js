@@ -14,7 +14,7 @@ class HeaderComponent extends React.Component {
                             </Col>
                             <Col xs={6} md={4} className="myUser">
 
-                                <NavLink to="/Signin">Signin</NavLink>/<NavLink to="/Signup">Signup</NavLink>
+                                <NavLink to="/signin">Sign In</NavLink>/<NavLink to="/signup">Sign Up</NavLink>
 
                             </Col>
                         </Row>
