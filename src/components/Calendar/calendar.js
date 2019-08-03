@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { DateTimeInput } from 'semantic-ui-calendar-react';
 import { Form, ButtonToolbar, Button } from 'react-bootstrap';
 
-class DateTimeForm extends React.Component {
+export default class DateTimeForm extends Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -45,5 +45,3 @@ class DateTimeForm extends React.Component {
 
 
   }
-
-  export default DateTimeForm;
