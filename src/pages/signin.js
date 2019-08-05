@@ -6,7 +6,7 @@ import MyVerticallyCenteredModal from '../components/Checkout/login-yes';
 import HeaderComponent  from "../components/Header/header";
 import FooterComponent  from "../components/Footer/footer";
 import Facebook from '../components/Facebook/facebook';
-
+import {Redirect} from 'react-router-dom';
 class SignIn extends Component {
   state = {
     email: '',
@@ -29,7 +29,25 @@ class SignIn extends Component {
     });
   }
 
+  constructor(props){
+    super(props);
+    this.state ={
+      redirectToReferrer: false,
+      name:'',
+      email:''
+    }
+  }
+
+  componentDidMount(){ 
+  let data = JSON.parse(sessionStorage.getItem('userData'));
+    this.setState({name: data.userData.name});
+    this.setState({email: data.userData.email});
+  }
+
   render() {
+    if(!sessionStorage.getItem('userData')){
+      return (<Redirect to={'/login'}/>)
+    }
     let modalClose = () => this.setState({ modalShow: false });
     return (<div>
                 <div className="myHeader">
@@ -38,6 +56,7 @@ class SignIn extends Component {
                 <div>
                   <Facebook></Facebook>
                 </div>
+                <h2>Welcome{this.state.name}</h2>
             </div>
             );
   }
