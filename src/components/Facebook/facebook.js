@@ -46,11 +46,7 @@ export default class Facebook extends Component {
                 autoLoad={true}
                 fields="name,email,picture"
                 onClick={this.myOnClick.bind(this)}
-                callback={this.myCallBack.bind(this)} 
-                render={renderProps => (
-                    <button onClick={renderProps.onClick}>This is my custom FB button</button>
-                  )}
-                />)
+                callback={this.myCallBack.bind(this)} />)
         }
         return (
             <div>
