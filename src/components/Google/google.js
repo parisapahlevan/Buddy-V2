@@ -1,19 +1,33 @@
-import React from 'react';
-import GoogleLogin  from 'react-google-login';
 
+import GoogleLogin  from 'react-google-login';
 import React, { Component } from 'react'
 
-export default class google extends Component {
+export default class Google extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+        }
+    }
+
+    myOnSuccess(resp) {
+        console.log('google login has been succesfull called ...: ', resp)
+    }
+
+    myOnFailure(err) {
+        console.log('google login has FAILED ...: ', err)
+    }
+
     render() {
         return (
             <div>
                <GoogleLogin
-    clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-    buttonText="Login"
-    onSuccess={responseGoogle}
-    onFailure={responseGoogle}
-    cookiePolicy={'single_host_origin'}
-  />, 
+                    clientId="538892584854-nvglkhrqgd7hvbaqfgql7rsu6posd70e.apps.googleusercontent.com"
+                    buttonText="LOGIN WITH GOOOGLE"
+                    onSuccess={this.myOnSuccess.bind()}
+                    onFailure={this.myOnFailure.bind()}
+                    cookiePolicy={'single_host_origin'}
+                /> 
             </div>
         )
     }

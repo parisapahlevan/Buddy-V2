@@ -6,6 +6,7 @@ import MyVerticallyCenteredModal from '../components/Checkout/login-yes';
 import HeaderComponent  from "../components/Header/header";
 import FooterComponent  from "../components/Footer/footer";
 import Facebook from '../components/Facebook/facebook';
+import Google from '../components/Google/google';
 
 class SignIn extends Component {
   state = {
@@ -37,6 +38,9 @@ class SignIn extends Component {
                 </div>
                 <div>
                   <Facebook></Facebook>
+                </div>
+                <div>
+                  <Google></Google>
                 </div>
             </div>
             );
