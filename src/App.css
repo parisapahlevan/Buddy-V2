@@ -100,13 +100,12 @@ z-index: 20;
   background-color: whitesmoke;
 }
 
-.myUser{
+.myUser {
   font-size: 15px;
   padding-left: 191px;
   padding-top: 37px;
-
+  padding-right: 2px;
 }
-
 .dog-img{
   width: 250px;
   height: 250px;
