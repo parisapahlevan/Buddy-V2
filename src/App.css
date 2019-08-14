@@ -228,3 +228,46 @@ z-index: 20;
 .mySearch{
   height: -webkit-fill-available;
 }
+
+#facebookButton{
+  position: absolute;
+  height: 40px;
+  width: 380px;
+    margin: 30px 0 0 -190px;
+    top: 50%;
+    left: 50%;
+    background-color:#395697;
+    color: #fff;
+    border-color: #395697;
+    font-size: 13px;
+    margin-top: -100px;
+    text-align: center;
+  
+}
+#googleButton{
+  position: absolute;
+  height: 40px;
+  width: 380px;
+    margin: -20px 0 0 -190px;
+    top: 50%;
+    left: 50%;
+    color: #6a737c;
+    border-color: #adb3b9;
+    font-size: 13px;
+    margin-top: -150px;
+    text-align: center;
+}
+
+#logodesign{
+  position: absolute;
+    /* z-index: 3; */
+    background: #fff;
+    left: 90px;
+    top: 7px;
+}
+
+#mygoogle{
+  left: 100px;
+  top: 9px;
+  margin-right: 4px;
+}
