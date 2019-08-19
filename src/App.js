@@ -5,9 +5,10 @@ import Home from './pages/home';
 import Dogs from './pages/dogs';
 import SignIn from "./pages/signin"
 import Details from './pages/details';
-import Signup from "./pages/signup"
-import ShelterForm from "./components/Form"
+// import Signup from "./pages/signup"
+import ShelterForm from "./components/Form";
 import API from './utils/API';
+import Signup from './pages/signup';
 class App extends Component {
 
   render() {
